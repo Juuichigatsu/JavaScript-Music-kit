@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <div class="keys2">
+        <div data-key="192" class="key"> <kbd>` ~</kbd> <span class="sound">harp 1</span> </div>
+        <div data-key="49" class="key"> <kbd>1</kbd> <span class="sound">harp 2</span> </div>
+        <div data-key="50" class="key"> <kbd>2</kbd> <span class="sound">harp 3</span> </div>
+        <div data-key="51" class="key"> <kbd>3</kbd> <span class="sound">harp 4</span> </div>
+        <div data-key="52" class="key"> <kbd>4</kbd> <span class="sound">harp 5</span> </div>
+        <div data-key="53" class="key"> <kbd>5</kbd> <span class="sound">harp 6</span> </div>
+        <div data-key="54" class="key"> <kbd>6</kbd> <span class="sound">harp 7</span> </div>
+        <div data-key="55" class="key"> <kbd>7</kbd> <span class="sound">violin 1</span> </div>
+        <div data-key="56" class="key"> <kbd>8</kbd> <span class="sound">violin 2</span> </div>
+        <div data-key="57" class="key"> <kbd>9</kbd> <span class="sound">violin 3</span> </div>
+        <div data-key="48" class="key"> <kbd>0</kbd> <span class="sound">violin 4</span> </div>
+        <div data-key="189" class="key"> <kbd>- _ </kbd> <span class="sound">violin 5</span> </div>
+        <div data-key="187" class="key"> <kbd>= +</kbd> <span class="sound">violin 6</span> </div>
+        <div data-key="8" class="key"> <kbd>Bkspe</kbd> <span class="sound">violin 7</span> </div>
+    </div>
+    <div class="keys3">
+        <div data-key="9" class="key"> <kbd>Tab</kbd> <span class="sound">piano 1</span> </div>
+        <div data-key="81" class="key"> <kbd>Q</kbd> <span class="sound">piano 2</span> </div>
+        <div data-key="87" class="key"> <kbd>W</kbd> <span class="sound">piano 3</span> </div>
+        <div data-key="69" class="key"> <kbd>E</kbd> <span class="sound">piano 4</span> </div>
+        <div data-key="82" class="key"> <kbd>R</kbd> <span class="sound">piano 5</span> </div>
+        <div data-key="84" class="key"> <kbd>T</kbd> <span class="sound">piano 6</span> </div>
+        <div data-key="89" class="key"> <kbd>Y</kbd> <span class="sound">piano 7</span> </div>
+        <div data-key="85" class="key"> <kbd>U</kbd> <span class="sound">piano 8</span> </div>
+        <div data-key="73" class="key"> <kbd>I</kbd> <span class="sound">piano 9</span> </div>
+        <div data-key="79" class="key"> <kbd>O</kbd> <span class="sound">piano 10</span> </div>
+        <div data-key="80" class="key"> <kbd>P</kbd> <span class="sound">piano 11</span> </div>
+        <div data-key="219" class="key"> <kbd>[ { </kbd> <span class="sound">piano 12</span> </div>
+        <div data-key="221" class="key"> <kbd>&#93; &#125;</kbd> <span class="sound">piano 13</span> </div>
+        <div data-key="220" class="key"> <kbd>\ | </kbd> <span class="sound">piano 14</span> </div>
+    </div>
+    <div class="keys4">
+        <div data-key="20" class="key"> <kbd>CLK</kbd> <span class="sound">gong</span> </div>
+        <div data-key="65" class="key"> <kbd>A</kbd> <span class="sound">clap</span> </div>
+        <div data-key="83" class="key"> <kbd>S</kbd> <span class="sound">hihat</span> </div>
+        <div data-key="68" class="key"> <kbd>D</kbd> <span class="sound">kick</span> </div>
+        <div data-key="70" class="key"> <kbd>F</kbd> <span class="sound">openhat</span> </div>
+        <div data-key="71" class="key"> <kbd>G</kbd> <span class="sound">boom</span> </div>
+        <div data-key="72" class="key"> <kbd>H</kbd> <span class="sound">ride</span> </div>
+        <div data-key="74" class="key"> <kbd>J</kbd> <span class="sound">snare</span> </div>
+        <div data-key="75" class="key"> <kbd>K</kbd> <span class="sound">tom</span> </div>
+        <div data-key="76" class="key"> <kbd>L</kbd> <span class="sound">tink</span> </div>
+        <div data-key="186" class="key"> <kbd>; :</kbd> <span class="sound">timbales</span> </div>
+        <div data-key="222" class="key"> <kbd>' "</kbd> <span class="sound">pop</span> </div>
+    </div>
+    <div class="keys5">
+        <div data-key="16" class="key"> <kbd>Shift</kbd> <span class="sound">guitar 1</span> </div>
+        <div data-key="90" class="key"> <kbd>Z</kbd> <span class="sound">Acoustic</span> </div>
+        <div data-key="88" class="key"> <kbd>X</kbd> <span class="sound">bass 1</span> </div>
+        <div data-key="67" class="key"> <kbd>C</kbd> <span class="sound">bass 2</span> </div>
+        <div data-key="86" class="key"> <kbd>V</kbd> <span class="sound">beep</span> </div>
+        <div data-key="66" class="key"> <kbd>B</kbd> <span class="sound">beew</span> </div>
+        <div data-key="78" class="key"> <kbd>N</kbd> <span class="sound">chord e</span> </div>
+        <div data-key="77" class="key"> <kbd>M</kbd> <span class="sound">guitar 2</span> </div>
+        <div data-key="188" class="key"> <kbd>, &#60; </kbd> <span class="sound">clipton</span> </div>
+        <div data-key="190" class="key"> <kbd>. &#62;</kbd> <span class="sound">rock</span> </div>
+        <div data-key="191" class="key"> <kbd>/ ?</kbd> <span class="sound">guitar 3</span> </div>
+        <div data-key="16" class="key"> <kbd>Shift</kbd> <span class="sound">Vibrato</span> </div>
+    </div>
+    <div class="keys6">
+        <div data-key="17" class="key"> <kbd>Ctrl</kbd> <span class="sound">saxofon</span> </div>
+        <div data-key="18" class="key"> <kbd>Alt</kbd> <span class="sound">saxofon 1</span> </div>
+        <div data-key="32" class="key"> <kbd> Space </kbd> <span class="sound">saxofon 2</span> </div>
+        <div data-key="18" class="key"> <kbd>Alt</kbd> <span class="sound">saxofon 3</span> </div>
+        <div data-key="17" class="key"> <kbd>Ctrl</kbd> <span class="sound">saxofon 4</span> </div>
+        <div data-key="37" class="key"> <kbd>&larr;</kbd> <span class="sound">saxofon 5</span> </div>
+        <div data-key="38" class="key"> <kbd>&uarr;</kbd> <span class="sound">saxofon 6</span> </div>
+        <div data-key="39" class="key"> <kbd>&rarr;</kbd> <span class="sound">saxofon 7</span> </div>
+        <div data-key="40" class="key"> <kbd>&darr;</kbd> <span class="sound">saxofon 8</span> </div>
+    </div>
+    <!-- drums-->
+    <audio data-key="20" src="./sounds/drums/gong.wav"></audio>
+    <audio data-key="65" src="./sounds/drums/clap.wav"></audio>
+    <audio data-key="83" src="./sounds/drums/hihat.wav"></audio>
+    <audio data-key="68" src="./sounds/drums/kick.wav"></audio>
+    <audio data-key="70" src="./sounds/drums/openhat.wav"></audio>
+    <audio data-key="71" src="./sounds/drums/boom.wav"></audio>
+    <audio data-key="72" src="./sounds/drums/ride.wav"></audio>
+    <audio data-key="74" src="./sounds/drums/snare.wav"></audio>
+    <audio data-key="75" src="./sounds/drums/tom.wav"></audio>
+    <audio data-key="76" src="./sounds/drums/tink.wav"></audio>
+    <audio data-key="186" src="./sounds/drums/timbales.WAV"></audio>
+    <audio data-key="222" src="./sounds/drums/Clair-Pop.wav"></audio>
+    <audio data-key="13" src="./sounds/drums/cowbell.mp3"></audio>
+    <!-- guitars-->
+    <audio data-key="16" src="./sounds/guitars/aaanote.wav"></audio>
+    <audio data-key="90" src="./sounds/guitars/AcousticGtr.mp3"></audio>
+    <audio data-key="88" src="./sounds/guitars/bass_guitar.wav"></audio>
+    <audio data-key="67" src="./sounds/guitars/bass_guitar1.wav"></audio>
+    <audio data-key="86" src="./sounds/guitars/beep.wav"></audio>
+    <audio data-key="66" src="./sounds/guitars/BWEE.mp3"></audio>
+    <audio data-key="78" src="./sounds/guitars/chord-E.wav"></audio>
+    <audio data-key="77" src="./sounds/guitars/crstop.wav"></audio>
+    <audio data-key="188" src="./sounds/guitars/gt_clipon.wav"></audio>
+    <audio data-key="190" src="./sounds/guitars/Rock_Guitar.wav"></audio>
+    <audio data-key="191" src="./sounds/guitars/GTR1.WAV"></audio>
+    <audio data-key="16" src="./sounds/guitars/Vibrato-Vibrato-.wav"></audio>
+    <!--saxofon-->
+    <audio data-key="17" src="./sounds/saxofons/SAX.WAV"></audio>
+    <audio data-key="18" src="./sounds/saxofons/saxofon.wav"></audio>
+    <audio data-key="32" src="./sounds/saxofons/saxofon1.mp3"></audio>
+    <audio data-key="18" src="./sounds/saxofons/saxofon2.wav"></audio>
+    <audio data-key="17" src="./sounds/saxofons/saxofon3.mp3"></audio>
+    <audio data-key="37" src="./sounds/saxofons/saxofon4.mp3"></audio>
+    <audio data-key="38" src="./sounds/saxofons/saxofon5.mp3"></audio>
+    <audio data-key="39" src="./sounds/saxofons/saxofon6.WAV"></audio>
+    <audio data-key="40" src="./sounds/saxofons/saxophone.wav"></audio>
+    <!-- piano-->
+    <audio data-key="9" src="./sounds/piano/piano1.wav"></audio>
+    <audio data-key="81" src="./sounds/piano/piano2.WAV"></audio>
+    <audio data-key="87" src="./sounds/piano/piano3.wav"></audio>
+    <audio data-key="69" src="./sounds/piano/piano4.wav"></audio>
+    <audio data-key="82" src="./sounds/piano/piano5.wav"></audio>
+    <audio data-key="84" src="./sounds/piano/piano6.mp3"></audio>
+    <audio data-key="89" src="./sounds/piano/piano7.mp3"></audio>
+    <audio data-key="85" src="./sounds/piano/piano8.wav"></audio>
+    <audio data-key="73" src="./sounds/piano/piano9.wav"></audio>
+    <audio data-key="79" src="./sounds/piano/piano10.wav"></audio>
+    <audio data-key="80" src="./sounds/piano/piano11.wav"></audio>
+    <audio data-key="219" src="./sounds/piano/piano12.wav"></audio>
+    <audio data-key="221" src="./sounds/piano/piano13.wav"></audio>
+    <audio data-key="220" src="./sounds/piano/piano14.WAV"></audio>
+    <!--harp & violine-->
+    <audio data-key="192" src="./sounds/harp&violin/harp1.wav"></audio>
+    <audio data-key="49" src="./sounds/harp&violin/harp2.wav"></audio>
+    <audio data-key="50" src="./sounds/harp&violin/harp3.wav"></audio>
+    <audio data-key="51" src="./sounds/harp&violin/harp4.mp3"></audio>
+    <audio data-key="52" src="./sounds/harp&violin/harp5.mp3"></audio>
+    <audio data-key="53" src="./sounds/harp&violin/harp6.wav"></audio>
+    <audio data-key="54" src="./sounds/harp&violin/harp7.wav"></audio>
+    <audio data-key="55" src="./sounds/harp&violin/VIOLIN.mp3"></audio>
+    <audio data-key="56" src="./sounds/harp&violin/VIOLIN1.wav"></audio>
+    <audio data-key="57" src="./sounds/harp&violin/VIOLIN2.mp3"></audio>
+    <audio data-key="48" src="./sounds/harp&violin/VIOLIN3.WAV"></audio>
+    <audio data-key="189" src="./sounds/harp&violin/VIOLIN4.WAV"></audio>
+    <audio data-key="187" src="./sounds/harp&violin/VIOLIN5.WAV"></audio>
+    <audio data-key="8" src="./sounds/harp&violin/VIOLIN6.WAV"></audio>
+    <script>
+        function removeTransition(e) {
+            if (e.propertyName !== 'transform') return;
+            e.target.classList.remove('playing');
+        }
+
+        function playSound(e) {
+            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+            const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+            if (!audio) return;
+            key.classList.add('playing');
+            audio.currentTime = 0;
+            audio.play();
+        }
+        const keys = Array.from(document.querySelectorAll('.key'));
+        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+        window.addEventListener('keydown', playSound);
+    </script>
+</body>
+
+</html>
